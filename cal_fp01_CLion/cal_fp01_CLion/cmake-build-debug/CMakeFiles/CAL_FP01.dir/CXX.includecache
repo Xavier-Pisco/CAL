@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xavier/Desktop/FEUP/2A2S/CAL/cal_fp01_CLion/Tests/Partitioning.cpp
+Partitioning.h
+/home/xavier/Desktop/FEUP/2A2S/CAL/cal_fp01_CLion/Tests/Partitioning.h
+
+/home/xavier/Desktop/FEUP/2A2S/CAL/cal_fp01_CLion/Tests/Partitioning.h
+

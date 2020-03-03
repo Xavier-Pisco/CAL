@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="CAL_FP02" targetName="gtest" />
+      <config projectName="CAL_FP02" targetName="CAL_FP02" />
+      <config projectName="CAL_FP02" targetName="gmock_main" />
+      <config projectName="CAL_FP02" targetName="gmock" />
+      <config projectName="CAL_FP02" targetName="gtest_main" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="680932c0-9962-42a9-a7a7-49397b80ed3f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1Ya3s0Cq1A432bCHMiUwEqtdS51" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="CMake Application.CAL_FP02">
+    <configuration name="CAL_FP02" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CAL_FP02" TARGET_NAME="CAL_FP02" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CAL_FP02" RUN_TARGET_NAME="CAL_FP02">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CAL_FP02" TARGET_NAME="gmock" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CAL_FP02" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CAL_FP02" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CAL_FP02" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.CAL_FP02" />
+      <item itemvalue="CMake Application.gmock" />
+      <item itemvalue="CMake Application.gmock_main" />
+      <item itemvalue="CMake Application.gtest" />
+      <item itemvalue="CMake Application.gtest_main" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="680932c0-9962-42a9-a7a7-49397b80ed3f" name="Default Changelist" comment="" />
+      <created>1583167080805</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583167080805</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1874" height="340" key="GridCell.Tab.0.bottom" timestamp="1583247675448">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1583247675448" />
+    <state width="1874" height="340" key="GridCell.Tab.0.center" timestamp="1583247675447">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1583247675447" />
+    <state width="1874" height="340" key="GridCell.Tab.0.left" timestamp="1583247675446">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1583247675446" />
+    <state width="1874" height="340" key="GridCell.Tab.0.right" timestamp="1583247675447">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1583247675447" />
+    <state width="1874" height="340" key="GridCell.Tab.1.bottom" timestamp="1583247675449">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1583247675449" />
+    <state width="1874" height="340" key="GridCell.Tab.1.center" timestamp="1583247675449">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1583247675449" />
+    <state width="1874" height="340" key="GridCell.Tab.1.left" timestamp="1583247675448">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1583247675448" />
+    <state width="1874" height="340" key="GridCell.Tab.1.right" timestamp="1583247675449">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1583247675449" />
+    <state x="624" y="252" key="run.anything.popup" timestamp="1583171010617">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="624" y="252" key="run.anything.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1583171010617" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1583245737379">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1583245737379" />
+  </component>
+</project>
