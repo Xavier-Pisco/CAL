@@ -1,11 +1,8 @@
 .git/
 cal_fp01_CLion/.idea/
-cal_fp01_CLion/lib/
 cal_fp01_CLion/cmake-build-debug/
 cal_fp02_CLion/.idea/
-cal_fp02_CLion/lib/
 cal_fp02_CLion/cmake-build-debug/
 cal_fp03_CLion/.idea/
-cal_fp03_CLion/lib/
 cal_fp03_CLion/cmake-build-debug/
 
