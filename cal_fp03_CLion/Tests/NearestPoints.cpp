@@ -61,7 +61,6 @@ Result nearestPoints_BF(vector<Point> &vp) {
 Result nearestPoints_BF_SortByX(vector<Point> &vp) {
 	Result res;
 	sortByX(vp, 0, vp.size()-1);
-	// TODO
 	return res;
 }
 
@@ -125,8 +124,39 @@ void setNumThreads(int num)
  * Divide and conquer approach, single-threaded version.
  */
 Result nearestPoints_DC(vector<Point> &vp) {
+    Result res;
 	sortByX(vp, 0, vp.size() -1);
-	return np_DC(vp, 0, vp.size() - 1, 1);
+	if (vp.size() == 2) return Result(vp[0].distance(vp[1]),vp[0],vp[1]);
+
+    vector<Point> vleft, vright;
+
+    for (int i = 0; i < vp.size(); i++){
+        if (i <= vp.size()/2){
+            vleft.push_back(vp[i]);
+        } else {
+            vright.push_back(vp[i]);
+        }
+    }
+
+    Result left = nearestPoints_BF(vleft);
+    Result right = nearestPoints_BF(vright);
+
+    if (left.dmin < right.dmin){
+        res = left;
+    } else {
+        res = right;
+    }
+
+    for (int i = 0; i < vp.size() - 1; i++){
+        for (int j = i+1; j < vp.size(); j++){
+            if (abs(vp[i].x - vp[j].x) > res.dmin)
+                break;
+            if (vp[i].distance(vp[j]) < res.dmin){
+                res = Result(vp[i].distance(vp[j]), vp[i], vp[j]);
+            }
+        }
+    }
+    return res;
 }
 
 
