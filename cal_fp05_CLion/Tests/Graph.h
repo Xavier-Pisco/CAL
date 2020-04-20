@@ -102,6 +102,9 @@ template <class T>
 class Graph {
 	vector<Vertex<T> *> vertexSet;    // vertex set
 
+	vector<vector<int>> distance;
+	vector<vector<Vertex<T>*>> predecessor;
+
 public:
 	Vertex<T> *findVertex(const T &in) const;
 	bool addVertex(const T &in);
@@ -270,13 +273,28 @@ vector<T> Graph<T>::getPathTo(const T &dest) const{
 
 template<class T>
 void Graph<T>::floydWarshallShortestPath() {
-	// TODO
+	distance.resize(getNumVertex());
+	for (int i = 0; i < distance.size(); i++){
+	    distance[i].resize(getNumVertex());
+	    for (int j = 0; j < distance[i].size(); j++){
+	        if (i == j) distance[i][j] = 0;
+	        else distance[i][j] = INT_MAX;
+	    }
+	}
+	predecessor.resize(getNumVertex());
+	for (int i = 0; i < predecessor.size(); i++){
+	    predecessor[i].resize(getNumVertex());
+        for (int j = 0; j < predecessor[i].size(); j++) {
+            if (i == j) predecessor[i][j] = vertexSet[i];
+            else predecessor[i][j] = NULL;
+        }
+	}
 }
 
 template<class T>
 vector<T> Graph<T>::getfloydWarshallPath(const T &orig, const T &dest) const{
 	vector<T> res;
-	// TODO
+
 	return res;
 }
 
