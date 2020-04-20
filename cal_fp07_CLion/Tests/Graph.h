@@ -137,6 +137,7 @@ public:
 	~Graph();
 
 	// Fp07 - minimum spanning tree
+	void removeEdgeByDest(const Edge<T> & dest, Vertex<T>* v);
     bool addBidirectionalEdge(const T &sourc, const T &dest, double w);
 	vector<Vertex<T>*> calculatePrim();
 	vector<Vertex<T>*> calculateKruskal();
@@ -366,15 +367,55 @@ vector<T> Graph<T>::getfloydWarshallPath(const T &orig, const T &dest) const{
 /**************** Minimum Spanning Tree  ***************/
 template <class T>
 bool Graph<T>::addBidirectionalEdge(const T &sourc, const T &dest, double w) {
-    // TODO
+    Vertex<T>* s = findVertex(sourc);
+    Vertex<T>* d = findVertex(dest);
+    s->addEdge(d, w);
+    d->addEdge(s, w);
     return false;
 }
 
+template <class T>
+void Graph<T>::removeEdgeByDest(const Edge<T> &e, Vertex<T> * v) {
+    for(Vertex<T>* v1 : vertexSet){
+        if (v1 != v) {
+            for (auto e1 = v1->adj.begin(); e1 != v1->adj.end(); e1++) {
+                if (e1->dest == e.dest){
+                    v1->adj.erase(e1);
+                    break;
+                }
+            }
+        }
+    }
+}
 
 
 template <class T>
 vector<Vertex<T>* > Graph<T>::calculatePrim() {
-	// TODO
+    Vertex<T>* v = vertexSet.front();
+
+    dijkstraShortestPath(v->info);
+
+    for(Vertex<T> * v1: vertexSet){
+        v1->visited = false;
+    }
+
+    MutablePriorityQueue<Vertex<T>> q;
+    q.insert(v);
+    v->visited = true;
+
+    while(!q.empty()){
+        v = q.extractMin();
+        for (Edge<T> e: v->adj){
+            if (!e.dest->visited) {
+                if (v->dist + e.weight == e.dest->dist) {
+                    e.dest->visited = true;
+                    //e.dest->path = v;
+                    removeEdgeByDest(e, v);
+                    q.insert(e.dest);
+                }
+            }
+        }
+    }
 	return vertexSet;
 }
 
@@ -382,7 +423,25 @@ vector<Vertex<T>* > Graph<T>::calculatePrim() {
 
 template <class T>
 vector<Vertex<T>*> Graph<T>::calculateKruskal() {
-	// TODO
+	Vertex<T>* v = vertexSet.front();
+
+	dijkstraShortestPath(v->info);
+
+	int n = 0;
+
+	while(n < vertexSet.size() - 1){
+	    Edge<T> minEdge(nullptr, nullptr, INF);
+
+	    for (Vertex<T> * v1: vertexSet){
+                for (Edge<T> e: v1->adj) {
+                    if (e.weight < minEdge.weight)
+                        minEdge = e;
+                }
+	    }
+        removeEdgeByDest(minEdge, minEdge.orig);
+	    n++;
+	}
+
 	return vertexSet;
 }
 
