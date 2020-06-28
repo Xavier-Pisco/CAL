@@ -80,4 +80,38 @@ Prints por ordem da evolução da árvore
 <img src="exame2016prints/5.png" height = 200>
 <img src="exame2016prints/6.png" height = 200>
 
+### b
+
+Não sei nenhuma solução possível.
+
+## 4
+
+### a
+
+É impossível pois o fluxo de F para qualquer outro ponto tem de passar pela aresta A-F e A-F tem fluxo máximo de **10000 uv**. Este é também o fluxo máximo da rede.
+
+Gráfico de fluxo:
+
+<img src="exame2016prints/4.a.png" height = 200>
+
+
+### b
+
+O volume máximo da rede continuaria o mesmo, sendo que passaria a ser dividido entre os dois consumidores.
+
+Os dois possíveis gráficos de fluxo (prioridade para D ou prioridade para C):
+<img src="exame2016prints/4.b.png" height = 200>
+<img src="exame2016prints/4.c.png" height = 200>
+
+
+
+### c
+
+O volume máximo da rede aumentaria para 30000 uv, sendo que o consumidor D poderia receber um fluxo máximo de 30000 uv (20000 de G e 10000 de A) e o consumidor em C poderia receber um fluxo de até 15000 uv (10000 de A e 5000 de D).
+
+## 5
+
+### a
+
+
 
