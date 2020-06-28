@@ -113,5 +113,34 @@ O volume máximo da rede aumentaria para 30000 uv, sendo que o consumidor D pode
 
 ### a
 
+2³ = 8, ou seja, 3 bits codificam 8 caracteres de tamanho fixo.
 
+a, b, c, d, A, B, C, D, E = 9 caracteres, logo não é possível definir os caracteres usando apenas 3 bits.
 
+### b
+
+7 * a + 5 * b + 5 * c + 8 * d + 3 * A + 2 * B + 2 * C + 2 * D + 5 * E.
+
+Começamos pelos que aparecem mais vezes para poupar no número de bits.
+
+d = 1, a = 01, b = 001, c = 0001, E = 00001, A = 000001, B = 0000001, C = 00000001, D = 00000000
+
+No mínimo, são precisos 7 * 2 + 5 * 3 + 5 * 4 + 8 * 1 + 3 * 6 + 2 * 7 + 2 * 8 + 2 * 8 + 5 * 5 = 146 bits.
+
+### c
+
+Utilizando tamanho fixo seriam necessários 4 * 39 = 156 bits, enquanto uqe em código de tamanho variável, seriam necessários apenas 146 bits, mas no caso de mensagens que contenham o mesmo número de caracteres diferentes, isto é, o mesmo número de as, bs, cs, etc. seria melhor utilizar o código de tamanho fixo.
+
+Ao utilizar RLE, seriam necessários menos bits para representar a string, pois existem sequências de vários caracteres repetidos mais de 3 vezes e que seriam representadas por *Xy, onde X é a letra do alfabeto e y o número de vezes que aparece.
+
+## 6
+
+### a
+
+Se o problema for quais são as solicitações a que se consegue responder num determinado intervalo de tempo, pode ser traduzido num problema de decisão assim:
+
+    É possível responder a estas solicitações em t <= k?
+
+### b
+
+Não sei responder a esta
