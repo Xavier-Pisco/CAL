@@ -99,13 +99,12 @@ Gráfico de fluxo:
 
 O volume máximo da rede continuaria o mesmo, sendo que passaria a ser dividido entre os dois consumidores.
 
+
+### c
+
 Os dois possíveis gráficos de fluxo (prioridade para D ou prioridade para C):
 <img src="exame2016prints/4.b.png" height = 200>
 <img src="exame2016prints/4.c.png" height = 200>
-
-
-
-### c
 
 O volume máximo da rede aumentaria para 30000 uv, sendo que o consumidor D poderia receber um fluxo máximo de 30000 uv (20000 de G e 10000 de A) e o consumidor em C poderia receber um fluxo de até 15000 uv (10000 de A e 5000 de D).
 
