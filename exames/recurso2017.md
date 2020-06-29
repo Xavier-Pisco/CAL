@@ -26,13 +26,12 @@ RIP 2.5 valores
 
 ### a
 
-No algoritmo de Prim começa por se adicionar a aresta com o menor peso e, a partir dos vértices dessa aresta adicionar a aresta menos pesada que tenha como destino um vértice que ainda não pertence ao novo grafo.
+No algoritmo de Prim adiciona-se sempre a aresta com menos peso em que 1 dos vértices pertence ao novo grafo e outro ainda não
 
 <img src="recurso2017prints/2.a.1.png" width=500>
 <img src="recurso2017prints/2.a.2.png" width=500>
 <img src="recurso2017prints/2.a.3.png" width=500>
 <img src="recurso2017prints/2.a.4.png" width=500>
-<img src="recurso2017prints/2.a.5.png" width=500>
 
 ### b
 
