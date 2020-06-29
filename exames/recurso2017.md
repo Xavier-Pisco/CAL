@@ -35,7 +35,7 @@ No algoritmo de Prim adiciona-se sempre a aresta com menos peso em que 1 dos vé
 
 ### b
 
-Como G - H tem o menor peso possível, esta seria sempre a primeira aresta, por isso, a aresta C - E seria adicionada depois de adicionar E mas antes de adicionar a aresta F - C, pelo que teria de ser um valor menir que 10, ou seja, 0 < w <= 9.
+Como o vértice adicionado a seguir a C é o F, com a aresta C - F, seria necessário essa aresta ter um valor menor que a aresta C - F. Se primeiro se adicionasse F, H, G, depois a aresta teria de ter um valor menor que G - E, ou seja menor que 5, mas isto seria apenas necessário se o valor da aresta fosse maior que 10, e 10 < w < 5 é impossível. Assim, a nova aresta teria de ter um valor 0 < w < 10.
 
 ## 3
 
