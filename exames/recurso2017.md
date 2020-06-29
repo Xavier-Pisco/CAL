@@ -104,13 +104,7 @@ Usando o algoritmo de Dijkstra facilmente se obtém o menor custo entre os dois 
 
 ### a
 
-O fluxo máximo é a quantidade máxima que sai de H, pois a partir de aí os dispersores começam a libertar água e só parte dela é que continua nos tubos.
-
-Assim, o limite do fluxo é 10.
-
-### b
-
-Admitindo que o aspersor primeiro deixa passar água para a tubulação e só depois liberta a água, existe um fluxo de 10 litros/hora na tubulação E -> H.
+É suposto considerar que um aspersor diminui o fluxo ou não? Se sim, quanto diminui?
 
 ## 5
 
