@@ -44,6 +44,8 @@ Como G - H tem o menor peso possível, esta seria sempre a primeira aresta, por 
 
 Usando as arestas com ordem no sentido horário a partir das 12 horas.
 
+O primeiro vértice a ser verificado é o que tiver menor distância, assume-se que todos os vértices começam com dist(V) = infinito
+
     dist(A) = 0, path(A) = null
     A -> B, dist(B) = 12, path(B) = A
     A -> C, dist(C) = 16, path(C) = A
@@ -52,21 +54,25 @@ Usando as arestas com ordem no sentido horário a partir das 12 horas.
     B -> F, dist(F) = 31, path(F) = B
     B -> C
     B -> A
-    C -> B
-    C -> F, dist(F) = 26, path(F) = C
-    C -> D
-    C -> A
     D -> C
     D -> E, dist(E) = 25, path(E) = D
     D -> G, dist(G) = 17, path(G) = D
     D -> A
-    E -> F
-    E -> H
-    E -> G
-    E -> D
+    C -> B
+    C -> F, dist(F) = 26, path(F) = C
+    C -> D
+    C -> A
     G -> E, dist(E) = 22, path(E) = G
     G -> H, dist(H) = 18, path(H) = G
     G -> D
+    H -> B
+    H -> G
+    H -> E
+    H -> F, dist(F) = 24, path(F) = H
+    F -> B
+    F -> H
+    F -> E
+    F -> C
     E -> F
     E -> H
     E -> G
