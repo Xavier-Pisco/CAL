@@ -35,7 +35,7 @@ A - C - D - F - G = 8 + 1 + 4 + 3 = 16
         custo(v) <- infinito
         paht(v) <- nil
     gasolina = 10
-    custo(A) = 0
+    custo(A) = 10 * preco(A)
     Q = {} //min-priority queue
     insert(Q, A)
     while (Q != {})
