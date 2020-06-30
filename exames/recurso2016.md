@@ -122,31 +122,30 @@ Para 10 caracteres são necessários 4 bits (2³ = 8 e 2⁴ = 16), 4 * (10+5+3+2
 
 <img src="R2016-5.b).png" width=500>
 
-Com tamanho variável,
+Com base na árvore,
 
-    f[0] = 1
-    f[6] = 01
+    f[0] = 10
     f[2] = 001
-    f[7] = 0001
-    f[9] = 00001
-    f[3] = 000001
-    f[5] = 000000
+    f[3] = 0001
+    f[5] = 0000
+    f[6] = 11
+    f[7] = 010
+    f[9] = 011
 
-    10 * 1 + 10 * 2 + 5 * 3 + 5 * 4 + 5 * 5 + 3 * 6 + 2 * 6 = 120 bits
+    10 * 2 + 5 * 3 + 3 * 4 + 2 * 4 + 10 * 2 + 5 * 3 + 5 * 3 = 105 bits
 
 ### c
 
 Considerando o alfabeto codificado na alínea anterior:
 
-    1 = f[0]
-    0001 = f[7]
+    10 = f[0]
     001 = f[2]
-    0001 = f[7]
-    1 = f[0]
-    01 = f[6]
+    001 = f[2]
+    0001 = f[3]
+    10 = f[0]
+    1 = ?
 
-A sequência de caracteres seria f[0] f[7] f[2] f[7] f[0] f[6].
-    
+Como existe um bit que não corresponde a nenhum caracter esta sequência não pode fazer parte do texto em análise. Uma possível sequência seria uma semelhante a esta mas sem o último 1, que seria f[0] f[2] f[2] f[3] f[0].
 
 ## 6
 
