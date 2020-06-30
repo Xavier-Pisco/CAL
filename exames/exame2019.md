@@ -19,7 +19,7 @@ RIP 4 valores
     C - F = 5
 
     Saídas:
-        A - 15 + 5 = 20
+        A - 10 + 10 = 20
         B - 5 + 5 = 10
         C - 10 + 5 + 5 = 20
     Chegadas:
@@ -140,4 +140,69 @@ S(n) = O(1) pois apenas tem de guardar 3 valores, dois para a fórmula e o atual
 
 ## 5
 
+**D**
+
+## 6
+
+**D**
+
+## 7
+
+**a-d-c-g-e-b**
+
+Esta maneira tem 3 setas a apontar no sentido contrário a todas as outras, b->d, b->c e g->c
+
+## 8
+
+**O(|E| * |E|)**
+
+## 9
+
+**|V²| ~ |E|**
+
+## 10
+
+**Não respondo**
+
+## 11
+
+**Não dá para ver os números**
+
+## 12
+
+**2**
+
+Uma são os 3 vértices que formam um triângulo no canto superior esquerdo. A outra são os dois vértices no canto inferior direito.
+
+## 13
+
+**Grafo de caminhos** (sem certezas)
+
+## 14
+
+**A** (sem certezas)
+
+## 15
+
+**do carteiro chinês**
+
+## 16
+
+**A**
+
+## 17
+
+**O(|P| * |T|)**
+
+## 18
+
+**Não respondo**
+
+## 19
+
+**Caixeiro Viajante**
+
+## 20
+
 **B**
+
